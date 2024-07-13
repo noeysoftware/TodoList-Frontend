@@ -1,6 +1,7 @@
 import axios from "axios";
 import { BASE_URL } from "./constants";
 
+axios.defaults.withCredentials = true;
 // create an axios instance
 const axiosInstance = axios.create({
   // set base url, timeout of 10s, header type
